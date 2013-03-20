@@ -1,0 +1,26 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: watcomifs.zip
+       Short Description: Sample Source for building an IFS driver using Open Watcom
+        Long Description: (none)
+
+      Proposed directory
+           for placement: /pub/os2/system/drivers/filesys
+
+               Your name:  Patrick Ingle
+           Email address:  patrick_ingle@yahoo.com
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL: (none) 
+
+      Would you like the
+   contact email address
+    included in listings? yes
+
+Operating System/Version: OS/2 Warp 4
+ Additional requirements: 
+
+                Replaces: (none)
+
+

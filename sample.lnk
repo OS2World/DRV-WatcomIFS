@@ -1,0 +1,57 @@
+name sample.ifs
+sys os2 dll
+option protmode
+option map
+option quiet
+option stack=0
+lib os2
+lib fshelper.lib
+lib dhcalls.lib
+import DOSWRITE DOSCALLS.138
+import DOS32FLATDS DOSCALLS.370
+file sample.obj
+segment '_TEXT' PRELOAD EXECUTEREAD NONSHARED
+segment type DATA PRELOAD NONSHARED
+export FS_ALLOCATEPAGESPACE
+export FS_ATTRIBUTE
+export FS_NAME
+export FS_ATTACH
+export FS_CHDIR
+export FS_CHGFILEPTR
+export FS_CLOSE
+export FS_COMMIT
+export FS_COPY
+export FS_DELETE
+export FS_EXIT
+export FS_FILEATTRIBUTE
+export FS_FILEINFO
+export FS_FILELOCKS
+export FS_FINDCLOSE
+export FS_FINDFIRST
+export FS_FINDFROMNAME
+export FS_FINDNEXT
+export FS_FINDNOTIFYCLOSE
+export FS_FINDNOTIFYFIRST
+export FS_FINDNOTIFYNEXT
+export FS_FLUSHBUF
+export FS_FSCTL
+export FS_FSINFO
+export FS_INIT
+export FS_IOCTL
+export FS_MKDIR
+export FS_MOUNT
+export FS_MOVE
+export FS_NEWSIZE
+export FS_NMPIPE
+export FS_OPENCREATE
+export FS_PATHINFO
+export FS_PROCESSNAME
+export FS_READ
+export FS_RMDIR
+export FS_SETSWAP
+export FS_SHUTDOWN
+export FS_WRITE
+export FS_DOPAGEIO
+export FS_OPENPAGEFILE
+export FS_CANCELLOCKREQUEST
+export FS_FILEIO

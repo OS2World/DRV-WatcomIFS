@@ -1,0 +1,17 @@
+These files show how to build an IFS (Installable File System)
+driver using Open Watcom 1.3 for OS/2
+
+Thanks to Open Watcom team, they included support for developing
+16-bit OS/2 modules, for which an IFS driver is required to be
+produce as. Prior to Open Watcom, the way to create an IFS driver
+was to use the DDK with Microsoft 6.0 compiler for OS/2.
+
+Also included is an INF document explaining IFS development.
+
+A good example for IFS development is to look at the FAT32 IFS
+driver.
+
+Happy IFS Development!
+Patrick Ingle
+patrick_ingle@yahoo.com
+

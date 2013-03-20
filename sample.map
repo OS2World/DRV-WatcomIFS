@@ -1,0 +1,113 @@
+Open Watcom Linker Version 1.3
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       05/08/28 16:13:58
+Executable Image: sample.ifs
+creating an OS/2 16-bit dynamic link library
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+DGROUP                          0002:0000            00000058
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+_TEXT                  CODE           AUTO           0001:0000       0000019d
+CONST                  DATA           DGROUP         0002:0000       00000000
+CONST2                 DATA           DGROUP         0002:0000       00000000
+_DATA                  DATA           DGROUP         0002:0000       00000054
+_BSS                   BSS            DGROUP         0002:0054       00000004
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: sample.obj(D:\projects\ifs\sample.c)
+0002:0000      FS_ATTRIBUTE
+0002:0004      FS_NAME
+0001:0000      FS_ALLOCATEPAGESPACE
+0001:0000      FS_CHGFILEPTR
+0001:0000      FS_CHDIR
+0001:0000      FS_MOUNT
+0001:0011      FS_ATTACH
+0001:0011      FS_FINDNEXT
+0001:0011      FS_MOVE
+0001:0011      FS_NMPIPE
+0001:0022      FS_CLOSE
+0001:0022      FS_COMMIT
+0001:0022      FS_DOPAGEIO
+0001:0022      FS_CANCELLOCKREQUEST
+0001:0022      FS_FSINFO
+0001:0033      FS_COPY
+0001:0044      FS_DELETE
+0001:0044      FS_NEWSIZE
+0001:0044      FS_RMDIR
+0001:0055      FS_EXIT
+0001:0065      FS_FILEATTRIBUTE
+0001:0065      FS_FILEINFO
+0001:0065      FS_FILEIO
+0001:0065      FS_MKDIR
+0001:0076      FS_FINDCLOSE
+0001:0087      FS_FINDFROMNAME
+0001:0087      FS_OPENPAGEFILE
+0001:0098      FS_FINDFIRST
+0001:00a9      FS_FLUSHBUF
+0001:00ba      FS_FSCTL
+0001:00ca      FS_FILELOCKS
+0001:00d8      FS_INIT
+0001:010e      FS_IOCTL
+0001:011f      FS_FINDNOTIFYCLOSE
+0001:0130      FS_FINDNOTIFYFIRST
+0001:0141      FS_FINDNOTIFYNEXT
+0001:0141      FS_READ
+0001:0141      FS_WRITE
+0001:0152      FS_OPENCREATE
+0001:0163      FS_PROCESSNAME
+0001:0171      FS_PATHINFO
+0001:0180      FS_SETSWAP
+0001:018e      FS_SHUTDOWN
+0002:0054+     _pfnDevHelp
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+DOSWRITE                            DOSCALLS
+DOS32FLATDS                         DOSCALLS
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  0200 (512.)
+Memory size:  01f5 (501.)
+Link time: 00:00.30
